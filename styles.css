@@ -19,8 +19,9 @@ body
     color: white;
     background-image: url(https://i.pinimg.com/originals/45/e6/b8/45e6b85207aa4af2f8dbd3b76c0525e0.gif);
     background-position: right;
-    background-size: 40%;
+    background-size: 45%;
     background-repeat: no-repeat;
+    /* background-size:50%; */
 }
 
 nav
@@ -31,11 +32,15 @@ nav
     padding: 10px 0;
     background-color: black;
 }
-.logo
+nav h1
 {
-    width: 120px;
-    margin-left: 50px;
-}
+  
+        font-size:35px;
+        background: -webkit-linear-gradient( #84E9FF, #00a1df);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+         margin-left: 50PX;
+     }
 
 nav ul li
 {
@@ -62,21 +67,24 @@ nav ul li a:hover
     color: #002366;
     display: grid;
     place-items: center;
+   
 }
 .music_container
 {
-    width: 35rem;
+    width: 40rem;
     height: 55rem;
     background-color: white;
     border-radius: 2rem;
     box-shadow: 0 1.2rem 3rem .5rem rgba(255, 255, 255, 0.2);
-    padding: 3rem;
+    padding: 2rem;
     text-align: center;
+    background-image: linear-gradient(to left top, #2754b6, #007cd4, #00a1df, #00c2dd, #2be1d5);
+    /* background: linear-gradient(rgb(205, 66, 101), rgb(175, 54, 106), rgb(144, 44, 110), rgb(112, 34, 114), rgb(75, 26, 118)); */
 }
 .music_container #title
 {
     text-transform: uppercase;
-    color: black;
+    color: white;
     letter-spacing: 0.2rem;
     word-spacing: .1rem;
     margin: 2rem 0 0.5rem 0;
@@ -87,13 +95,13 @@ nav ul li a:hover
 }
 .music_container #artist
 {
-    color: purple;
+    color: white;
     text-transform: capitalize;
     letter-spacing: 0.1rem;
-    font-size: 2rem;
+    font-size: 2.5rem;
     margin-bottom: 4rem;
     font-weight: 300;
-    color: #fe2b6e;
+ 
 }
 .img_container
 {
@@ -115,4 +123,53 @@ img
     font-size: 2rem;
     cursor: pointer;
     filter: drop-shadow(0 1.2rem 3rem 0.5rem rgba(0,0,0,0.4));
+}
+.music_control 
+{
+    width: 20rem;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 50px;
+    align-items: center;
+}
+.music_control .main_button
+{
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    background-color: black;
+    color: #fff;
+    font-size: 1.4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.music_control .fa-solid:hover
+{
+    color: #F94C66;
+}
+
+.music_control .fa-play:hover
+{
+    background-color: #fff;
+    color: black;
+    box-shadow: 0 1rem 2rem 0.2rem rgba(0,0, 0,0.4);
+}
+
+.anime
+{
+    animation: rotateplayer 3s linear infinite;
+}
+@keyframes rotateplayer
+{
+    from
+    { 
+        transform: rotate(0deg);
+    }
+    to
+    { 
+        transform: rotate(360deg);
+    }
 }

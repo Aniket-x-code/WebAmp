@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@100&family=Montserrat:wght@900&display=swap');
+
+*,
+*::before
+*::after
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html
+{
+font-size: 62%;
+font-family: "Jost", sans-serif ;
+}
+body
+{
+    background-color: black;
+    color: white;
+    background-image: url(https://i.pinimg.com/originals/45/e6/b8/45e6b85207aa4af2f8dbd3b76c0525e0.gif);
+    background-position: right;
+    background-size: 40%;
+    background-repeat: no-repeat;
+}
+
+nav
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+    background-color: black;
+}
+.logo
+{
+    width: 120px;
+    margin-left: 50px;
+}
+
+nav ul li
+{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 30px;
+    font-size: 20px;
+}
+nav ul li a
+{
+    text-decoration: none;
+    color: #fff;
+}
+nav ul li a:hover
+{
+    color: #00FFAB;
+    transition-delay: 200ms;
+}
+
+.main_div
+{
+    width: 100vw;
+    height: 100vh;
+    color: #002366;
+    display: grid;
+    place-items: center;
+}
+.music_container
+{
+    width: 35rem;
+    height: 55rem;
+    background-color: white;
+    border-radius: 2rem;
+    box-shadow: 0 1.2rem 3rem .5rem rgba(255, 255, 255, 0.2);
+    padding: 3rem;
+    text-align: center;
+}
+.music_container #title
+{
+    text-transform: uppercase;
+    color: black;
+    letter-spacing: 0.2rem;
+    word-spacing: .1rem;
+    margin: 2rem 0 0.5rem 0;
+    font-size: 2.5rem;
+    font-weight: 500;
+    text-shadow: 0 0.3rem 0  0.5rem rgba(0,0, 0,0.3);
+
+}
+.music_container #artist
+{
+    color: purple;
+    text-transform: capitalize;
+    letter-spacing: 0.1rem;
+    font-size: 2rem;
+    margin-bottom: 4rem;
+    font-weight: 300;
+    color: #fe2b6e;
+}
+.img_container
+{
+    width: 25rem;
+    height: 25rem;
+    margin: auto;
+}
+img
+{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    box-shadow: 0 1.2rem 3rem .5rem rgba(0,0, 0,0.4);
+    object-fit: cover;
+}
+.music_control .fa-solid
+{ 
+    color: black;
+    font-size: 2rem;
+    cursor: pointer;
+    filter: drop-shadow(0 1.2rem 3rem 0.5rem rgba(0,0,0,0.4));
+}
